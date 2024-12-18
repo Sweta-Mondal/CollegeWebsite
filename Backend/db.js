@@ -1,5 +1,7 @@
+require('dotenv').config(); // Load environment variables
+
 const mongoose = require('mongoose');
-const mongoURI = "mongodb+srv://sweta02mandal:022004@cluster0.qqbhg.mongodb.net/smartcollegeapp";
+const mongoURI = process.env.MONGO_URI; // Read from .env
 
 const connectToMongo = () => {
     return new Promise((resolve, reject) => {
