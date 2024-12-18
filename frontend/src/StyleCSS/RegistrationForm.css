@@ -1,0 +1,75 @@
+/* Form Container Styling */
+.registration-form {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header Styling */
+.registration-form h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Error Message Styling */
+.registration-form p {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Form Input Styling */
+.registration-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Focused Input Styling */
+.registration-form input:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+
+/* Submit Button Styling */
+.registration-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Hover Effect for Button */
+.registration-form button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .registration-form {
+        padding: 20px;
+    }
+
+    .registration-form h2 {
+        font-size: 20px;
+    }
+
+    .registration-form input, .registration-form button {
+        padding: 10px;
+    }
+}

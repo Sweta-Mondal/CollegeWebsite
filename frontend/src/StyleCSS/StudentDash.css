@@ -1,0 +1,23 @@
+.dashboard {
+    display: flex;
+    position: relative;
+  }
+  
+  .sidebar-toggle {
+    position: fixed;
+    top: 20px;
+    left: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #1a202c;
+    z-index: 10;
+  }
+  .sidebar-toggle.active {
+    background-color: rgb(39, 39, 103);
+  }
+
+
+
+  

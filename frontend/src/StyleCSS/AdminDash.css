@@ -1,0 +1,87 @@
+/* AdminDash.css */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.adminText {
+  font-size: 28px; /* Adjust size as needed */
+  font-weight: 600; /* Semi-bold text */
+  color: #4e54c8; /* Color that matches the theme */
+  text-align: center; /* Center align text */
+  margin-bottom: 20px; /* Space below the heading */
+  text-transform: uppercase; /* Uppercase letters for emphasis */
+  letter-spacing: 1px; /* Spacing between letters for readability */
+  opacity: 0; /* Start hidden */
+  animation: fadeIn 0.6s ease forwards; /* Fade-in animation */
+  animation-delay: 0.3s; /* Delay for the animation to start */
+}
+
+/* Fade-in animation keyframes */
+@keyframes fadeIn {
+  from {
+      opacity: 0; /* Start fully transparent */
+      transform: translateY(-10px); /* Move slightly up */
+  }
+  to {
+      opacity: 1; /* End fully opaque */
+      transform: translateY(0); /* Move to original position */
+  }
+}
+
+
+h1 {
+  margin-bottom: 30px;
+  color: #343a40;
+  font-size: 2.5em;
+  font-weight: 700;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.button {
+  padding: 15px 20px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s;
+  width: 48%; /* Adjusting width for spacing */
+  text-decoration: none; /* Remove underline */
+  background-color: #007bff; /* Consistent background color for all buttons */
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  background-color: #009B9F; /* Darker blue on hover */
+}
+
+@media (max-width: 600px) {
+  .button-row {
+      flex-direction: column; /* Stack buttons on small screens */
+  }
+
+  .button {
+      width: 100%; /* Full width on small screens */
+      margin-bottom: 10px; /* Space between buttons */
+  }
+}

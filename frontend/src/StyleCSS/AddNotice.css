@@ -1,0 +1,130 @@
+.add-notice-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f5f7fa; /* Light background color */
+    padding: 20px;
+  }
+  
+  .add-notice-form h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .add-notice-form form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .add-notice-form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .add-notice-form input[type="text"],
+  .add-notice-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: border-color 0.3s;
+  }
+  
+  .add-notice-form input[type="text"]:focus,
+  .add-notice-form textarea:focus {
+    border-color: #4a90e2; /* Blue border on focus */
+  }
+  
+  .add-notice-form textarea {
+    height: 150px;
+    resize: none; /* Prevents resizing */
+  }
+  
+  .add-notice-form button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #4caf50; /* Green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-notice-form button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+
+.dropdown-container {
+  margin-bottom: 15px;
+}
+
+/* Labels */
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Dropdowns */
+select {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  outline: none;
+}
+
+select:focus {
+  border-color: #007bff;
+}
+
+/* Button styling */
+.add-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #218838;
+}
+
+.add-button:active {
+  background-color: #1e7e34;
+}
+
+@media (max-width: 768px) {
+  /* Makes dropdowns full width on small screens */
+  select {
+    width: 100%;
+  }
+}
+
+  

@@ -1,0 +1,92 @@
+.add-subjects-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .add-subjects-header {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .add-subjects-form label {
+    font-size: 14px;
+    color: #555;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .add-subjects-form select,
+  .add-subjects-form input[type='text'] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .add-subjects-form select:focus,
+  .add-subjects-form input:focus {
+    outline: none;
+    border-color: #5a9ff1;
+    box-shadow: 0 0 4px rgba(90, 159, 241, 0.5);
+  }
+  
+  .add-subjects-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-subjects-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .add-subjects-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .add-subjects-list li {
+    font-size: 14px;
+    color: #333;
+    padding: 5px 0;
+  }
+  
+  .add-subjects-message {
+    font-size: 14px;
+    color: #ff5722;
+    margin-top: 10px;
+  }
+  
+  .add-subjects-get-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+    border: 2px solid #007bff;
+    background: #fff;
+    color: #007bff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .add-subjects-get-button:hover {
+    background: #007bff;
+    color: #fff;
+  }
+  

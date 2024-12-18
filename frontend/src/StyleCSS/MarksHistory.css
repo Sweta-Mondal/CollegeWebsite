@@ -1,0 +1,84 @@
+/* Container Styling */
+.marks-history-container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Headings */
+.marks-history-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.semester-marks h3 {
+    margin: 20px 0 10px;
+    color: #0056b3;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Table Styling */
+.marks-history-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+.marks-history-table thead {
+    background-color: #2a6fb9;
+    color: #fff;
+}
+
+.marks-history-table th, .marks-history-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.marks-history-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.marks-history-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Messages */
+.loading-message, .error-message, .no-data-message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.loading-message {
+    color: #ffa500;
+    font-weight: bold;
+}
+
+.error-message {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.no-data-message {
+    color: #555;
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .marks-history-container {
+        padding: 15px;
+    }
+
+    .marks-history-table th, .marks-history-table td {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+}

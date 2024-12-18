@@ -1,0 +1,85 @@
+/* Styling for the GalleryDisplay component */
+.head {
+    text-align: center;
+    font-size: 2.5rem; /* Keep this size for the heading */
+    margin: 20px 0;
+    color: #333;
+}
+
+.add-gallery-btn {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 12px 24px; /* Button padding */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem; /* Button font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-gallery-btn:hover {
+    background-color: #0056b3;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    gap: 20px; /* Space between items */
+    padding: 10px;
+    margin-left: 40px;
+}
+
+/* Add this to your existing GalleryDisplay.css */
+.delete-icon {
+    position: absolute; /* Position it absolutely within the gallery-item */
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    background: none; /* Remove default button styling */
+    border: none; /* Remove border */
+    color: #ff0000; /* Red color for the delete icon */
+    font-size: 1.5rem; /* Size of the delete icon */
+    cursor: pointer; /* Cursor change on hover */
+    transition: color 0.3s ease; /* Transition effect */
+}
+
+.delete-icon:hover {
+    color: #d9534f; /* Darker red on hover */
+    background-color: #FFFFF0;
+}
+
+.gallery-item {
+    position: relative; /* Set position to relative to allow positioning of child elements */
+    display: flex; /* Use flexbox for image and text alignment */
+    align-items: center; /* Center items vertically */
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Full width for each item */
+}
+
+
+.image-gallery {
+    width: 400px; /* Increased width for larger images */
+    height: 400px; /* Increased height for larger images */
+    object-fit: cover; /* Ensures images are cropped to fit */
+}
+
+.gallery-content {
+    margin-left: 20px; /* Space between image and text */
+    flex: 1; /* Allow text area to grow */
+}
+
+.title-image {
+    font-size: 1.5rem; /* Title font size */
+    margin: 5px 0;
+    color: #333;
+}
+
+.title-desc {
+    font-size: 1rem; /* Description font size */
+    color: #666;
+}

@@ -1,0 +1,82 @@
+
+.ebooks-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    padding: 20px;
+    max-width: 800px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading */
+  .ebooks-heading {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2em;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 10px;
+  }
+  
+  /* Loading and No Data Messages */
+  .ebooks-loading,
+  .ebooks-no-data {
+    text-align: center;
+    font-size: 1.2em;
+    color: #7f8c8d;
+    margin-top: 50px;
+  }
+  
+  /* eBooks List */
+  .ebooks-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Individual eBook Item */
+  .ebooks-item {
+    background-color: #f9f9f9;
+    border: 1px solid #dde1e7;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .ebooks-item:hover {
+    box-shadow: 0 8px 16px rgba(44, 62, 80, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  /* eBook Title */
+  .ebooks-title {
+    font-size: 1.5em;
+    color: #34495e;
+    margin-bottom: 10px;
+  }
+  
+  /* eBook Statement */
+  .ebooks-statement {
+    font-size: 1em;
+    color: #555555;
+    margin-bottom: 15px;
+  }
+  
+  /* Download Button */
+  .ebooks-download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2980b9;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ebooks-download-btn:hover {
+    background-color: #1f6391;
+    color: #ffffff;
+  }
+  

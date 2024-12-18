@@ -1,0 +1,54 @@
+.update-notice-container {
+    max-width: 800px; /* Increased maximum width for the form */
+    margin: 0 auto; /* Center the form on the page */
+    padding: 20px; /* Add padding inside the container */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 8px; /* Round the corners */
+    background-color: #f9f9f9; /* Light background color */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  h2 {
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Space below the heading */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column; /* Stack the form elements vertically */
+  }
+  
+  label {
+    margin-bottom: 8px; /* Space below each label */
+  }
+  
+  input[type="text"],
+  textarea {
+    padding: 10px; /* Space inside the input and textarea */
+    margin-bottom: 20px; /* Space below each input/textarea */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 4px; /* Rounded corners */
+    width: 100%; /* Make the input and textarea take full width */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+  }
+  
+  textarea {
+    height: 300px; /* Set a larger fixed height for the textarea */
+    min-height: 200px; /* Minimum height */
+    resize: vertical; /* Allow vertical resizing for the textarea */
+  }
+  
+  button {
+    padding: 10px; /* Space inside the button */
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Smooth background color transition */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  

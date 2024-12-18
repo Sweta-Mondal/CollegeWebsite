@@ -1,0 +1,85 @@
+/* ProfilePage.css */
+.MuiContainer-root {
+  position: relative; /* Allow positioning of children relative to this */
+  min-height: 100vh;  /* Ensure it spans the full viewport height */
+}
+
+.logout-button {
+  position: absolute; /* Make it relative to the .profile-paper container */
+  top: 20px; /* Distance from the top of the container */
+  right: 20px;
+  background-color: transparent; /* Transparent background for the icon */
+  color: #333; /* Adjust icon color as needed */
+  box-shadow: none; /* Remove box shadow for a cleaner icon look */
+}
+
+.logout-button:hover {
+  color: #f44336; /* Optional: Add a hover effect to change the icon color */
+}
+.profile-paper {
+    position: relative;  /* To allow positioning of logout button */
+    padding: 30px;
+    margin-top: 50px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Welcome text style */
+  .welcome-text {
+    color: #4caf50;
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  /* Loading text style */
+  .loading-text {
+    text-align: center;
+    font-size: 20px;
+    color: #757575;
+    margin-top: 50px;
+  }
+  
+  /* Button style */
+  .edit-button {
+    background-color: #00796b;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-button:hover {
+    background-color: #004d40;
+  }
+
+ 
+  
+  /* Typography styling */
+  strong {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Grid styling to create spacing between profile sections */
+  .MuiGrid-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  /* Responsive design: Adjust for smaller screens */
+  @media (max-width: 600px) {
+    .MuiGrid-item {
+      align-items: center;
+    }
+  
+    .MuiTypography-root {
+      text-align: center;
+    }
+  }
+  

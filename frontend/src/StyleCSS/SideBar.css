@@ -1,0 +1,41 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 0;
+    overflow: hidden;
+    background-color: #1a202c;
+    color: white;
+    transition: width 0.3s ease;
+    padding-top: 60px;
+  }
+  
+  .sidebar.open {
+    width: 250px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    padding: 15px 20px;
+    cursor: pointer;
+    color: #cbd5e0;
+  }
+  
+  .sidebar li:hover {
+    color: white;
+  }
+
+  .side-logout{
+    color: #4169E1;
+    margin-top: 25px;
+    margin-bottom: 0px;
+
+  }
+  .side-logout:hover{
+    text-decoration: underline;
+  }

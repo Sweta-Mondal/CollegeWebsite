@@ -1,0 +1,136 @@
+.admin-login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+  animation: fadeIn 1s ease; /* Fade in effect for the container */
+}
+
+.login-form {
+  background-color: #ddcef5;
+  padding: 40px;
+  border-radius: 8px;
+  width: 90%; /* Responsive width */
+  max-width: 400px; /* Max width for form */
+  text-align: center;
+  transform: translateY(-50px); /* Start above the center */
+  opacity: 0; /* Start hidden */
+  animation: slideIn 0.6s forwards; /* Slide in animation */
+  animation-delay: 0.3s; /* Delay the form appearance */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.adminText {
+  font-family: 'Montserrat', sans-serif; /* Use a modern, sans-serif font */
+  font-size: 28px; /* Larger font size for emphasis */
+  font-weight: bold; /* Bold text for strong emphasis */
+  color: #878aca; /* A vibrant color matching your theme */
+  margin-bottom: 20px; /* Space below the heading */
+  text-transform: uppercase; /* Uppercase letters for a formal look */
+  letter-spacing: 1.5px; /* Increased letter spacing for readability */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  animation: fadeInText 0.6s ease forwards; /* Fade-in animation for the heading */
+}
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+    transform: translateY(-10px); /* Slight upward movement during fade-in */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* End position */
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateY(0);
+    opacity: 1; /* Fade in to visible */
+  }
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  animation: popIn 0.6s ease forwards; /* Pop in animation for the heading */
+  animation-delay: 0.4s; /* Delay heading animation */
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1; /* Fade in to visible */
+  }
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 15px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border 0.3s ease, box-shadow 0.3s ease; /* Transition effect */
+  font-size: 16px; /* Increase font size for better readability */
+}
+
+.input-field:focus {
+  border-color: #7478be; /* Change border color on focus */
+  outline: none;
+  box-shadow: 0 0 5px rgba(100, 104, 173, 0.5); /* Add glow effect on focus */
+}
+
+.submit-button {
+  background-color: #7072a5; /* Button background color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transition effect */
+  width: 100%; /* Full width button */
+}
+
+.submit-button:hover {
+  background-color: #575c97; /* Darker shade on hover */
+  transform: translateY(-3px); /* Button lift effect on hover */
+}
+
+.submit-button:active {
+  transform: translateY(1px); /* Button press effect */
+}
+
+@media (max-width: 480px) {
+  .login-form {
+    padding: 20px; /* Reduced padding on smaller screens */
+  }
+
+  h2 {
+    font-size: 20px; /* Smaller font size for smaller screens */
+  }
+
+  .input-field,
+  .submit-button {
+    font-size: 14px; /* Smaller font size for inputs and buttons */
+  }
+}

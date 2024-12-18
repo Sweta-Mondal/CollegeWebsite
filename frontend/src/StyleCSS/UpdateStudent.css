@@ -1,0 +1,93 @@
+.update-student-container {
+  padding: 20px; /* Space around the container */
+}
+
+h2 {
+  text-align: center; /* Center the heading */
+  color: #333; /* Dark gray color for text */
+}
+
+.add-student-btn {
+  display: block; /* Make button a block element */
+  margin: 20px auto; /* Center button */
+  padding: 10px 20px; /* Padding for button */
+  font-size: 16px; /* Font size */
+  background-color: #007bff; /* Button color */
+  color: white; /* Button text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+}
+
+.filter-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space out filters evenly */
+  margin-bottom: 20px; /* Space below filter */
+}
+
+.filter-container select {
+  margin-right: 10px; /* Space between dropdowns */
+  padding: 10px; /* Padding for select boxes */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px; /* Consistent font size */
+  flex: 1; /* Allow select to grow */
+}
+
+.student-list {
+  list-style: none; /* Remove default list styles */
+  padding: 0; /* Remove default padding */
+}
+
+.student-item {
+  border: 1px solid #ccc; /* Border around each student card */
+  border-radius: 5px; /* Rounded corners */
+  padding: 20px; /* Padding for card */
+  margin-bottom: 20px; /* Space between cards */
+  position: relative; /* Allow absolute positioning of children */
+}
+
+.button-container {
+  position: absolute; /* Position it absolutely */
+  top: 10px; /* Align to top */
+  right: 10px; /* Align to right */
+}
+
+.delete-button {
+  background-color: #dc3545; /* Bootstrap danger color */
+  color: white; /* White text color */
+  border: none; /* Remove border */
+  padding: 8px 12px; /* Moderate padding for button */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+  font-size: 14px; /* Adjusted font size */
+}
+
+.student-details {
+  margin-top: 20px; /* Space below buttons */
+}
+
+.detail-btn {
+  background-color: #007bff; /* Button color */
+  color: white; /* Button text color */
+  border: none; /* Remove border */
+  padding: 8px 12px; /* Padding for button */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+  margin-top: 10px; /* Space above detail button */
+}
+
+.student-full-details {
+  margin-top: 15px; /* Space above details */
+  border-top: 1px solid #ccc; /* Top border for clarity */
+  padding-top: 10px; /* Space inside */
+}
+
+.update-btn {
+  background-color: #28a745; /* Bootstrap success color */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  padding: 8px 12px; /* Padding for button */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+}

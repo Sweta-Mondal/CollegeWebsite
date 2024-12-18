@@ -1,0 +1,175 @@
+.fetch-student-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.heading {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.filter-section {
+    margin-bottom: 15px;
+}
+
+.filter-section label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #34495e;
+}
+
+.dropdown {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff;
+    transition: border-color 0.3s;
+}
+
+.dropdown:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.fetch-button {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: bold;
+}
+
+.fetch-button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+.fetch-button:hover:not(:disabled) {
+    background-color: #2980b9;
+    transform: scale(1.02);
+}
+
+.error-message {
+    color: #e74c3c;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.students-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.student-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ecf0f1;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: box-shadow 0.3s, background-color 0.3s;
+}
+
+.student-item:hover {
+    background-color: #f1f8ff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.details-button,
+.allot-marks-button,
+.marks-history-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.details-button {
+    background-color: #8e44ad;
+    color: #fff;
+}
+
+.details-button:hover {
+    background-color: #732d91;
+}
+
+.allot-marks-button {
+    background-color: #27ae60;
+    color: #fff;
+}
+
+.allot-marks-button:hover {
+    background-color: #1e8449;
+}
+
+.marks-history-button {
+    background-color: #e67e22;
+    color: #fff;
+}
+
+.marks-history-button:hover {
+    background-color: #d35400;
+}
+
+.student-details {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    background-color: #fdfdfd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.student-details h3 {
+    color: #34495e;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.student-details p {
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.close-button {
+    display: block;
+    margin: 10px auto 0;
+    padding: 8px 15px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.close-button:hover {
+    background-color: #c0392b;
+}

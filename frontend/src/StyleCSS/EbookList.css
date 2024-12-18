@@ -1,0 +1,111 @@
+.ebook-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.heading {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.add-ebook-btn {
+    position: absolute; /* Use absolute positioning */
+    top: 20px; /* Adjust top spacing */
+    right: 20px; /* Adjust right spacing */
+    padding: 10px 20px; /* Add padding */
+    background-color: #4CAF50; /* Change background color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.add-ebook-btn:hover {
+    background-color: #45a049; /* Darker shade on hover */
+}
+
+.ebook-grid {
+    display: grid; /* Use grid layout for ebook cards */
+    grid-template-columns: repeat(4, 1fr); /* Four cards in a row */
+    gap: 20px; /* Space between cards */
+    width: 100%; /* Ensure it uses full width */
+}
+
+.ebook-card {
+    background: #f9f9f9; /* Light background for ebook cards */
+    border: 1px solid #ccc; /* Border for ebook cards */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Inner padding */
+    position: relative; /* Position relative for delete button */
+}
+
+.delete-btn {
+    position: absolute; /* Position the delete button */
+    top: 10px; /* Adjust the top position */
+    right: 10px; /* Adjust the right position */
+    background: none; /* No background */
+    border: none; /* No border */
+    font-size: 20px; /* Font size for icon */
+    cursor: pointer; /* Pointer on hover */
+    color: red; /* Icon color */
+}
+
+.ebook-title {
+    font-size: 18px; /* Font size for ebook title */
+    margin: 10px 0; /* Margin for spacing */
+}
+
+.ebook-description {
+    font-size: 14px; /* Font size for description */
+    margin-bottom: 10px; /* Space below description */
+}
+
+.download-btn {
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px; /* Padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Inline block for button */
+}
+
+.download-btn:hover {
+    background-color: #0056b3; /* Darker button on hover */
+    color: white;
+}
+.filter-container {
+    display: flex;
+    justify-content: space-between; /* Space out the dropdowns evenly */
+    margin: 20px 0; /* Add some margin above and below the filter */
+}
+
+.filter-container select {
+    padding: 10px; /* Add padding for better spacing */
+    margin: 0 10px; /* Space between dropdowns */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    background-color: #f8f8f8; /* Light background color */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.filter-container select:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.filter-container option {
+    font-size: 16px; /* Font size for options */
+}
+
+/* Optional: Add some hover effect */
+.filter-container select:hover {
+    background-color: #e9ecef; /* Slightly darker background on hover */
+}
+

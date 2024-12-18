@@ -1,0 +1,105 @@
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    animation: fadeIn 1s ease; /* Fade in effect for the container */
+}
+
+.signup-form {
+    background-color: #ddcef5;
+    padding: 40px;
+    border-radius: 8px;
+    width: 90%; /* Responsive width */
+    max-width: 400px; /* Max width for form */
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.userText {
+    font-size: 28px; /* Adjust size as needed */
+    font-weight: 600; /* Semi-bold text */
+    color: #4e54c8; /* Color that matches the theme */
+    text-align: center; /* Center align text */
+    margin-bottom: 20px; /* Space below the heading */
+    text-transform: uppercase; /* Uppercase letters for emphasis */
+    letter-spacing: 1px; /* Spacing between letters for readability */
+    animation: fadeIn 0.6s ease forwards; /* Fade-in animation for the heading */
+}
+
+.error {
+    color: red;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold; /* Bold labels for emphasis */
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px; /* Increase font size for better readability */
+    transition: border 0.3s ease, box-shadow 0.3s ease; /* Transition effect */
+}
+
+.input-field:focus {
+    border-color: #4e54c8; /* Change border color on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(78, 84, 200, 0.5); /* Add glow effect on focus */
+}
+
+.submit-button {
+    background-color: #4e54c8; /* Button background color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition effect */
+    width: 100%; /* Full width button */
+}
+
+.submit-button:hover {
+    background-color: #3b428a; /* Darker shade on hover */
+    transform: translateY(-3px); /* Button lift effect on hover */
+}
+
+.submit-button:active {
+    transform: translateY(1px); /* Button press effect */
+}
+
+/* Keyframes for the fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start transparent */
+    }
+    to {
+        opacity: 1; /* End fully visible */
+    }
+}
+
+/* Media query for responsive adjustments */
+@media (max-width: 480px) {
+    .signup-form {
+        padding: 20px; /* Reduced padding on smaller screens */
+    }
+
+    .userText {
+        font-size: 24px; /* Smaller font size for smaller screens */
+    }
+
+    .input-field,
+    .submit-button {
+        font-size: 14px; /* Smaller font size for inputs and buttons */
+    }
+}

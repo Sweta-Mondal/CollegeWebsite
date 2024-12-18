@@ -1,0 +1,44 @@
+/* StyleCSS/LoginPage.css */
+
+.bodyofPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f4f4f4; /* Light background color */
+  font-family: 'Arial', sans-serif; /* Font style */
+}
+
+.containerOfLogin {
+  background-color: #ffffff; /* White background for the login container */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 40px; /* Spacing inside the container */
+  max-width: 400px; /* Max width for the container */
+  width: 100%; /* Responsive width */
+}
+
+.containerOfButton {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 20px; /* Spacing between buttons */
+}
+
+.loginBtn {
+  display: block; /* Block display for full width */
+  text-align: center; /* Center the text */
+  padding: 15px; /* Padding around the button */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Bold font weight */
+  color: #ffffff; /* White text color */
+  background-color: #007bff; /* Primary blue color */
+  border: none; /* No border */
+  border-radius: 5px; /* Slightly rounded corners */
+  text-decoration: none; /* Remove underline from link */
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.loginBtn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  color: white;
+}
